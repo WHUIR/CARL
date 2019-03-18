@@ -2,7 +2,7 @@
 The implementation of “A Context-Aware User-Item Representation Learning for Item Recommendation”, Libing Wu, Cong Quan, Chenliang Li, Qian Wang, Bolong Zheng, Xianggang Luo, https://dl.acm.org/citation.cfm?id=3298988
 
 
-Requirements
+## Requirements
 Tensorflow 1.2
 
 Python 2.7
@@ -11,14 +11,14 @@ Numpy
 
 Scipy
 
-Data Preparation
+## Data Preparation
 To run CARL, 6 files are required: 
 Training Rating records: file_name=TrainInteraction.out
 each training sample is a sequence as:
 UserId\tItemId\tRating\tDate
 Example: 0\t3\t5.0\t1393545600
 
-Validate Rating records: file_name=ValInteraction.out
+## Validate Rating records: file_name=ValInteraction.out
 The format is the same as the training data format.
 Testing Rating records: file_name=TestInteraction.out
 The format is the same as the training data format.
@@ -27,7 +27,8 @@ Each line follows the format as:
 Word\tWord_Id
 Example: love\t0
 
-User Review Document: file_name=UserReviews.out
+## User Review Document: 
+file_name=UserReviews.out
 each line is the format as:
 UserId\tWord1_id Word2_id Word3_id …
 Example:0\tI love to eat hamburger …
@@ -36,7 +37,8 @@ The format is the same as the user review doc format.
 Note that: all files need to be located in the same directory. Besides, the code also supports to leverage the pretrained word embedding via uncomment the loading function “word2vec_word_embed” in the main file .
 Carl.py denotes the model named CARL;
 Review.py denotes the review-based component while Interaction.py denotes the interaction-based component.
-Configurations
+
+## Configurations
 word_latent_dim: the dimension size of word embedding;
 
 latent_dim: the latent dimension of the representation learned from the review documents (entity);
