@@ -14,7 +14,8 @@ Scipy
 ## Data Preparation
 To run CARL, 6 files are required: 
 
-Training Rating records: file_name=TrainInteraction.out
+### Training Rating records: 
+file_name=TrainInteraction.out
 
 each training sample is a sequence as:
 
@@ -27,7 +28,8 @@ file_name=ValInteraction.out
 
 The format is the same as the training data format. 
 
-Testing Rating records: file_name=TestInteraction.out
+### Testing Rating records: 
+file_name=TestInteraction.out
 
 The format is the same as the training data format.
 
