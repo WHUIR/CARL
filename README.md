@@ -56,7 +56,8 @@ file_name=ItemReviews.out
 
 The format is the same as the user review doc format.
 
-## Note that: all files need to be located in the same directory. Besides, the code also supports to leverage the pretrained word embedding via uncomment the loading function “word2vec_word_embed” in the main file . Carl.py denotes the model named CARL; Review.py denotes the review-based component while Interaction.py denotes the interaction-based component.
+## Note that: 
+all files need to be located in the same directory. Besides, the code also supports to leverage the pretrained word embedding via uncomment the loading function “word2vec_word_embed” in the main file . Carl.py denotes the model named CARL; Review.py denotes the review-based component while Interaction.py denotes the interaction-based component.
 
 ## Configurations
 word_latent_dim: the dimension size of word embedding;
